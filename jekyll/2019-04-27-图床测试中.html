@@ -1,0 +1,582 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>使用cloudflareR2存储图片做图床 · 《几天仙途》</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style. # 网站描述，用于SEO优化和简要说明站点功能
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="百里东郡"><link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/style.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/jekyll-gitbook/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/jekyll-gitbook//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/jekyll-gitbook/jekyll/2019-04-27-why.html" />
+        
+
+        
+            <link rel="next" href="/jekyll-gitbook/jekyll/2019-04-28-howto.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/jekyll-gitbook/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook">
+            
+                <a href="/jekyll-gitbook/" onclick="pageScrollToTop(this)">
+                    《几天仙途》
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2019-04-27-why.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2019-04-27-why.html" onclick="pageScrollToTop(this)">
+                                    为什么要使用 GitBook 搭建 Jekyll 网站？
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/jekyll-gitbook/jekyll/2019-04-27-%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95%E4%B8%AD.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2019-04-27-%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95%E4%B8%AD.html" onclick="pageScrollToTop(this)">
+                                    使用cloudflareR2存储图片做图床
+                                </a>
+                                
+                                    
+                                        
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2019-04-28-howto.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2019-04-28-howto.html" onclick="pageScrollToTop(this)">
+                                    如何开始
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2019-04-29-license.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2019-04-29-license.html" onclick="pageScrollToTop(this)">
+                                    许可证
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2021-08-10-toc.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2021-08-10-toc.html" onclick="pageScrollToTop(this)">
+                                    如何生成目录
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-05-24-page_cover.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2022-05-24-page_cover.html" onclick="pageScrollToTop(this)">
+                                    Page with cover image
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-06-26-wide_tables.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2022-06-26-wide_tables.html" onclick="pageScrollToTop(this)">
+                                    Wide tables
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html" onclick="pageScrollToTop(this)">
+                                    Tips, Warnings, and Dangers
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2023-08-31-mermaid.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2023-08-31-mermaid.html" onclick="pageScrollToTop(this)">
+                                    Diagrams with mermaid.js
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2023-10-14-math-latex.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2023-10-14-math-latex.html" onclick="pageScrollToTop(this)">
+                                    MathJax and LaTeX
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2023-12-12-footnotes.html">
+                            
+                                <a href="/jekyll-gitbook/jekyll/2023-12-12-footnotes.html" onclick="pageScrollToTop(this)">
+                                    Using Footnotes
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/about/">
+                            
+                                <a href="/jekyll-gitbook/pages/about/" onclick="pageScrollToTop(this)">
+                                    About
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/contact/">
+                            
+                                <a href="/jekyll-gitbook/pages/contact/" onclick="pageScrollToTop(this)">
+                                    Contact
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/design/draft/">
+                            
+                                <a href="/jekyll-gitbook/pages/design/draft/" onclick="pageScrollToTop(this)">
+                                    Design Draft
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/others/about/">
+                            
+                                <a href="/jekyll-gitbook/others/about/" onclick="pageScrollToTop(this)">
+                                    About others
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >使用cloudflareR2存储图片做图床</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/图床测试中">使用cloudflareR2存储图片做图床</h1>
+                    
+
+                    <ul>
+  <li>创建一个cloudflareR2存储桶</li>
+  <li>在R2存储桶中上传图片</li>
+  <li>在Jekyll中引用图片</li>
+</ul>
+
+<p><img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295282400.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295282412.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295298724.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295298729.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295298735.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295311764.jpg" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295342662.jpg" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295349744.jpg" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295361332.jpg" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295368937.jpg" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295621209.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295621215.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/PicGoUpload/1751295621220.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_230902_375.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_231248_853.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_231301_967.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_231337_084.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233225_639.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233451_134.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233508_040.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233527_290.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233616_638.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233637_968.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233649_025.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233705_291.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233912_110.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233931_777.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_233945_218.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234236_766.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234257_616.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234334_011.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234345_627.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234611_154.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234918_801.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_234936_244.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_235138_436.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_235151_685.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_235541_230.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_235901_434.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_235923_617.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-07_235933_201.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-08_000024_532.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-08_000758_492.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-08_000814_220.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-08_030423_035.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-08_031139_797.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/wechat_2025-06-08_031304_979.png" alt="你大爷" />
+<img src="https://pub-f13800668670486eb3e27e97e97fbca7.r2.dev/抖音截图/微信图片_2025-06-07_232454_470.png" alt="你大爷" /></p>
+
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/jekyll-gitbook/jekyll/2019-04-27-why.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 为什么要使用 GitBook 搭建 Jekyll 网站？">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/jekyll-gitbook/jekyll/2019-04-28-howto.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 如何开始">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "如何开始",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2019-04-28-howto.md",
+            "ref": "_posts/2019-04-28-howto.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "《几天仙途》",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-07-5-图床测试中.md",
+        "mtime": "2019-04-27 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-07-04 20:00:59 +0800"
+    },
+    "basePath": "/jekyll-gitbook",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/jekyll-gitbook/assets/gitbook/gitbook.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/theme.js"></script>
+
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/jekyll-gitbook/assets/gitbook/custom.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
